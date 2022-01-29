@@ -1,0 +1,58 @@
+.navbar {
+  height: 70px;
+  background-color: #18223c;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 2;
+  transition: transform 0.4s ease;
+}
+
+.navShadowed {
+  box-shadow: 0 10px 30px -10px #0d1529;
+}
+
+.navbar.hidden {
+  transform: translateY(-100%);
+}
+
+.linksContainer {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  right: 50px;
+}
+
+.navLinks {
+  color: white;
+  font-family: "Karla";
+  font-size: 1em;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navLinks:hover {
+  color: var(--light-purple);
+}
+
+#logo {
+  height: 60%;
+  position: absolute;
+  left: 50px;
+}
+
+#logo path,
+#logo polygon {
+  fill: var(--white);
+}
+
+#resumeButton {
+  padding: 10px 20px;
+  background-color: #f4db7d;
+  color: #18223c;
+}
