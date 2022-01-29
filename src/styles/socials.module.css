@@ -1,0 +1,15 @@
+.socialContainer {
+  position: fixed;
+  height: 150px;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.socialIcons {
+  height: 40px;
+  width: 40px;
+}
