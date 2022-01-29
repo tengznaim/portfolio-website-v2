@@ -1,0 +1,60 @@
+.heroContainer {
+  width: 90%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.leftText {
+  width: 45%;
+}
+
+.rightText {
+  width: 45%;
+}
+
+.header {
+  font-size: 4.5rem;
+  color: white;
+  font-family: "Karla";
+  font-weight: 600;
+}
+
+.subheader {
+  font-size: 2.5rem;
+  color: var(--white);
+  font-family: "Karla";
+  font-weight: 600;
+}
+
+.highlighted {
+  color: var(--light-purple);
+}
+
+.divider {
+  height: 50vh;
+  width: 5px;
+  background-color: var(--yellow);
+}
+
+.aboutParagraph {
+  font-size: 1.25rem;
+  color: var(--white);
+  font-family: "Karla";
+  font-weight: 400;
+}
+
+#archiveButton {
+  font-size: 1.25rem;
+  background-color: var(--yellow);
+  color: var(--primary-blue);
+  border: none;
+  cursor: pointer;
+  font-family: "Karla";
+  font-weight: 600;
+  margin: 32px 0;
+  padding: 16px 24px;
+}

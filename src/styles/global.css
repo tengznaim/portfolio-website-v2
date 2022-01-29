@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-blue: #18223c;
+  --secondary-blue: #233554;
+  --shadow-blue: #0d1529;
+  --light-purple: #9daaf2;
+  --light-blue: #d1fdfe;
+  --yellow: #f4db7d;
+  --white: #ffffff;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #18223c;
+  min-height: 100vh;
+  padding: 0px 100px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.main-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 25%;
+  background: url("/bg-pattern.svg");
+  background-size: 100vh;
+  background-repeat: repeat-y;
+  opacity: 25%;
+}
