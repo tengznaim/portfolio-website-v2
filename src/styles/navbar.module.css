@@ -1,37 +1,35 @@
-.navbar {
+.header {
   height: 70px;
-  background-color: #18223c;
   width: 100%;
+  background-color: #18223c;
+  padding: 0px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   top: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   z-index: 2;
-  transition: transform 0.4s ease;
 }
 
-.navShadowed {
-  box-shadow: 0 10px 30px -10px #0d1529;
-}
-
-.navbar.hidden {
-  transform: translateY(-100%);
+.navbar {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .linksContainer {
+  width: 600px;
   display: flex;
-  width: 40%;
-  justify-content: space-between;
   align-items: center;
-  position: absolute;
-  right: 50px;
+  justify-content: space-between;
 }
 
 .navLinks {
   color: white;
   font-family: "Karla";
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
 }
@@ -41,9 +39,8 @@
 }
 
 #logo {
-  height: 60%;
-  position: absolute;
-  left: 50px;
+  height: 40px;
+  aspect-ratio: 1;
 }
 
 #logo path,
@@ -55,4 +52,14 @@
   padding: 10px 20px;
   background-color: #f4db7d;
   color: #18223c;
+}
+
+@media screen and (max-width: 768px) {
+  .linksContainer {
+    display: none;
+  }
+
+  .header {
+    padding: 0px 20px;
+  }
 }
