@@ -7,13 +7,25 @@ import MediumIcon from "../assets/medium.svg"
 export default function Socials() {
   return (
     <div className={styles.socialContainer}>
-      <a href="https://github.com/tengznaim" target="_blank">
+      <a
+        href="https://github.com/tengznaim"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
         <GitHubIcon className={styles.socialIcons}></GitHubIcon>
       </a>
-      <a href="https://www.linkedin.com/in/tengku-naim/" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/tengku-naim/"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
         <LinkedInIcon className={styles.socialIcons}></LinkedInIcon>
       </a>
-      <a href="https://medium.com/@tengkunaim" target="_blank">
+      <a
+        href="https://medium.com/@tengkunaim"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
         <MediumIcon className={styles.socialIcons}></MediumIcon>
       </a>
     </div>
