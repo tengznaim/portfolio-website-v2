@@ -1,0 +1,70 @@
+.experienceContainer {
+  width: 90%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.header {
+  font-size: 2.5rem;
+  font-family: "Karla";
+  color: var(--white);
+}
+
+.content {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  margin: 50px 0px;
+}
+
+.selectorList {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.selectorButtons {
+  font-size: 1.5rem;
+  color: var(--light-purple);
+  background: none;
+  border: none;
+  padding: 10px 0px;
+  font-family: "Karla";
+  font-weight: 600;
+  cursor: pointer;
+  border-left: 2px solid var(--light-purple);
+  transition: border-left 0.2s ease-in-out;
+}
+
+.selectorButtons:hover {
+  background: #9daaf220;
+}
+
+.activeButton {
+  color: var(--white);
+  border-left: 4px solid var(--yellow);
+}
+
+.experienceInfo {
+  width: 80%;
+  padding: 10px 0px;
+}
+
+.infoHeader {
+  font-size: 1.5rem;
+  color: var(--white);
+  font-family: "Karla";
+  font-weight: 600;
+}
+
+.infoParagraph {
+  font-size: 1rem;
+  color: var(--white);
+  font-family: "Karla";
+  font-weight: 400;
+  margin: 20px 0px;
+}
