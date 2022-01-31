@@ -41,3 +41,13 @@
   background-repeat: repeat-y;
   opacity: 25%;
 }
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    padding: 0px 20px;
+  }
+
+  .main-container::after {
+    display: none;
+  }
+}

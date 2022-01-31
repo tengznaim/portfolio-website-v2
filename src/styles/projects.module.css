@@ -1,0 +1,119 @@
+.projectsContainer {
+  width: 90%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  /* For development to see page boundaries, remove later */
+  border: 1px solid white;
+}
+
+.header {
+  font-size: 2.5rem;
+  color: var(--white);
+  font-family: "Karla";
+  font-weight: 600;
+}
+
+.description {
+  margin: 20px 0px;
+  width: 60%;
+  font-size: 1rem;
+  color: white;
+  font-family: "Karla";
+  font-weight: 400;
+  text-align: center;
+}
+
+.externalLink {
+  color: var(--light-purple);
+  text-decoration: none;
+}
+
+/* Content Grid Related */
+
+.projects-grid {
+  margin: 20px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+}
+
+.project-item {
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  background-color: #23355490;
+  backdrop-filter: blur(5px);
+  transition: transform 0.2s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-10px);
+}
+
+.project-link-container {
+  width: 100%;
+}
+
+.link-icons {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  color: var(--light-purple);
+}
+
+.itemText {
+  margin: 20px 0px;
+  font-family: "Karla";
+  color: var(--white);
+}
+
+#project-title {
+  font-size: 2rem;
+}
+
+#project-description {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .projectsContainer {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+
+  .description {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+
+  .link-icons {
+    height: 25px;
+    width: 25px;
+  }
+
+  #project-title {
+    font-size: 1.5rem;
+  }
+
+  #project-description {
+    font-size: 1rem;
+  }
+}
