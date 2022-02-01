@@ -53,7 +53,7 @@ export default function Navbar() {
           <Link to="/#skills" className={styles.navLinks}>
             Skills
           </Link>
-          <Link to="/#experience" className={styles.navLinks}>
+          <Link to="/#contact" className={styles.navLinks}>
             Contact
           </Link>
           <a
