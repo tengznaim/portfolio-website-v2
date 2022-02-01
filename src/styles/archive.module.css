@@ -1,0 +1,63 @@
+.archive-container {
+  width: 90%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0px;
+  z-index: 1;
+}
+
+.header {
+  font-family: "Karla";
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.description {
+  font-family: "Karla";
+  width: 60%;
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.archive-table {
+  font-size: 1rem;
+  color: var(--white);
+  font-family: "Karla";
+  font-weight: 400;
+  border-collapse: collapse;
+  border-style: hidden;
+}
+
+.table-header {
+  font-size: 1.25rem;
+  text-align: left;
+  white-space: nowrap;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+.category-col,
+.data-col {
+  padding: 20px;
+  border: 2px solid var(--yellow);
+}
+
+.linksContainer {
+  display: flex;
+}
+
+.linkIcons {
+  color: var(--light-purple);
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
