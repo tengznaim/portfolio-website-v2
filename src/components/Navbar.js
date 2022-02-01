@@ -44,16 +44,16 @@ export default function Navbar() {
       <nav className={styles.navbar}>
         <PersonalLogo id={styles.logo} />
         <div className={styles.linksContainer}>
-          <Link to="#experience" className={styles.navLinks}>
+          <Link to="/#experience" className={styles.navLinks}>
             Experience
           </Link>
-          <Link to="#experience" className={styles.navLinks}>
+          <Link to="/#experience" className={styles.navLinks}>
             Projects
           </Link>
-          <Link to="#experience" className={styles.navLinks}>
+          <Link to="/#experience" className={styles.navLinks}>
             Skills
           </Link>
-          <Link to="#experience" className={styles.navLinks}>
+          <Link to="/#experience" className={styles.navLinks}>
             Contact
           </Link>
           <a

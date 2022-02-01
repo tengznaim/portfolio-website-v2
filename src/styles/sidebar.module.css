@@ -11,13 +11,12 @@
   justify-content: center;
   right: 0;
   top: 0;
-  background-color: #23355495;
-  backdrop-filter: blur(10px);
+  background-color: var(--secondary-blue);
   z-index: 3;
 }
 
 .linksContainer {
-  height: 60%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;

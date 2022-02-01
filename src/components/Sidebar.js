@@ -6,8 +6,14 @@ import { CgClose } from "@react-icons/all-files/cg/CgClose"
 
 export default function Sidebar() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
-  const toggleFunction = () => {
+  const toggleFunction = event => {
     setSidebarOpen(!sidebarOpen)
+
+    if (event.target.id === "open") {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = null
+    }
   }
 
   return (
@@ -16,11 +22,13 @@ export default function Sidebar() {
         <CgClose
           className={styles.mobileToggleButton}
           onClick={toggleFunction}
+          id="close"
         ></CgClose>
       ) : (
         <CgMenuRight
           className={styles.mobileToggleButton}
           onClick={toggleFunction}
+          id="open"
         ></CgMenuRight>
       )}
       <div
@@ -29,16 +37,16 @@ export default function Sidebar() {
         }
       >
         <div className={styles.linksContainer}>
-          <Link to="#experience" className={styles.navLinks}>
+          <Link to="/#experience" className={styles.navLinks}>
             Experience
           </Link>
-          <Link to="#experience" className={styles.navLinks}>
+          <Link to="/#experience" className={styles.navLinks}>
             Projects
           </Link>
-          <Link to="#experience" className={styles.navLinks}>
+          <Link to="/#experience" className={styles.navLinks}>
             Skills
           </Link>
-          <Link to="#experience" className={styles.navLinks}>
+          <Link to="/#experience" className={styles.navLinks}>
             Contact
           </Link>
           <a
