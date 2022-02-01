@@ -42,7 +42,9 @@ export default function Navbar() {
       }`}
     >
       <nav className={styles.navbar}>
-        <PersonalLogo id={styles.logo} />
+        <Link to="/">
+          <PersonalLogo id={styles.logo} />
+        </Link>
         <div className={styles.linksContainer}>
           <Link to="/#experience" className={styles.navLinks}>
             Experience

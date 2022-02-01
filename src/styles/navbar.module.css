@@ -58,6 +58,11 @@
   fill: var(--white);
 }
 
+#logo path:hover,
+#logo polygon:hover {
+  fill: var(--light-purple);
+}
+
 #resumeButton {
   padding: 10px 20px;
   background-color: #f4db7d;
