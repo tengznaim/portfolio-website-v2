@@ -9,9 +9,10 @@ export default function Projects() {
     query projectQuery {
       allMarkdownRemark(
         filter: {
-          fileAbsolutePath: { regex: "/projects/" }
           frontmatter: { feature: { eq: true } }
+          fileAbsolutePath: { regex: "/projects/" }
         }
+        sort: { order: ASC, fields: frontmatter___featureID }
       ) {
         nodes {
           id
@@ -30,12 +31,13 @@ export default function Projects() {
   const nodes = data.allMarkdownRemark.nodes
 
   return (
-    <section className={styles.projectsContainer}>
+    <section className={styles.projectsContainer} id="projects">
       <h1 className={styles.header}>Projects</h1>
       <p className={styles.description}>
-        I've worked in a variety of projects, primarily in the categories of
-        machine learning, computer vision and web application development. To
-        see more of my work, feel free to view the{" "}
+        I've worked on a variety of projects, primarily in the fields of machine
+        learning, computer vision and web application development. To see more
+        of my work, especially those in professional environments, feel free to
+        view my{" "}
         <Link to="/archive" className={styles.externalLink}>
           archive
         </Link>{" "}

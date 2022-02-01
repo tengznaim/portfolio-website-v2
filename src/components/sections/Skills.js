@@ -3,7 +3,7 @@ import * as styles from "../../styles/skills.module.css"
 
 export default function Skills() {
   return (
-    <section className={styles.skillsContainer}>
+    <section className={styles.skillsContainer} id="skills">
       <h1 className={styles.header}>Skills</h1>
       <table className={styles.skillsTable}>
         <tr>

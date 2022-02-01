@@ -47,10 +47,10 @@ export default function Navbar() {
           <Link to="/#experience" className={styles.navLinks}>
             Experience
           </Link>
-          <Link to="/#experience" className={styles.navLinks}>
+          <Link to="/#projects" className={styles.navLinks}>
             Projects
           </Link>
-          <Link to="/#experience" className={styles.navLinks}>
+          <Link to="/#skills" className={styles.navLinks}>
             Skills
           </Link>
           <Link to="/#experience" className={styles.navLinks}>
