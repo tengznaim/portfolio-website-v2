@@ -10,8 +10,9 @@ export default function Hero() {
           Hello, I'm <span className={styles.highlighted}>Naim!</span>
         </h1>
         <h1 className={styles.subheader}>
-          I love making <span className={styles.highlighted}>computers</span>{" "}
-          solve <span className={styles.highlighted}>human problems</span>
+          I love <span className={styles.highlighted}>solving problems</span>{" "}
+          with <span className={styles.highlighted}>data</span> and{" "}
+          <span className={styles.highlighted}>computers</span>
         </h1>
         <Link to="/archive">
           <button id={styles.archiveButton}>Check out my work!</button>
@@ -20,12 +21,14 @@ export default function Hero() {
       <div className={styles.divider}></div>
       <div className={styles.rightText}>
         <p className={styles.aboutParagraph}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum animi
-          nulla voluptates beatae? Nemo, animi optio. Libero vel culpa doloribus
-          unde nemo hic. Aliquam, minima blanditiis dignissimos fugit,
-          laudantium nobis provident a perferendis cum libero placeat numquam
-          enim unde animi minus quis! Itaque tempore mollitia hic repudiandae
-          perferendis sed iste.
+          I'm a third year{" "}
+          <span className={styles.highlighted}>Computer Science</span>{" "}
+          undergraduate majoring in{" "}
+          <span className={styles.highlighted}>Artificial Intelligence</span> at{" "}
+          <span className={styles.highlighted}>University of Malaya</span>. I
+          have a passion in building AI-based solutions and venturing into their
+          various fields. Currently, I'm focusing on completing my final two
+          semesters at university.
         </p>
       </div>
     </section>
