@@ -7,6 +7,7 @@ export default function Experience() {
     query experienceQuery {
       allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/experience/" } }
+        sort: { fields: frontmatter___experienceID, order: ASC }
       ) {
         nodes {
           id
@@ -14,9 +15,9 @@ export default function Experience() {
             company
             duration
             title
+            description
           }
           html
-          rawMarkdownBody
         }
       }
     }
@@ -53,14 +54,15 @@ export default function Experience() {
           <h1 className={styles.infoHeader}>
             {nodes[activeExperience].frontmatter.duration}
           </h1>
-          <p className={styles.infoParagraph}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto
-            officia minima odit cumque, inventore eos perferendis ipsam
-            laboriosam quam reprehenderit dolorum. Similique blanditiis dolor
-            nam fugit voluptate rem eaque, nemo itaque perspiciatis distinctio
-            ut provident, vel qui nulla. Quasi sint ea reiciendis harum, aliquam
-            cupiditate quo ullam inventore culpa quis.
-          </p>
+          {nodes[activeExperience].frontmatter.description && (
+            <p className={styles.infoParagraph}>
+              {nodes[activeExperience].frontmatter.description}
+            </p>
+          )}
+          <div
+            className={styles.taskList}
+            dangerouslySetInnerHTML={{ __html: nodes[activeExperience].html }}
+          ></div>
         </div>
       </div>
     </section>
