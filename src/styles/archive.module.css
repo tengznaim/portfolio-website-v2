@@ -21,13 +21,14 @@
   width: 60%;
   text-align: center;
   font-size: 1rem;
-  color: var(--white);
+  color: var(--purplish-white);
   margin-bottom: 20px;
 }
 
 .archive-table {
   font-size: 1rem;
   color: var(--white);
+  margin: 20px 0px;
   font-family: "Karla";
   font-weight: 400;
   border-collapse: collapse;
@@ -45,14 +46,13 @@ td {
   padding: 10px;
 }
 
-tbody tr:hover {
-  background: #9daaf220;
+td {
+  color: var(--purplish-white);
 }
 
-.category-col,
-.data-col {
-  padding: 20px;
-  border: 2px solid var(--yellow);
+tbody tr:nth-child(2n) {
+  background: #9daaf220;
+  backdrop-filter: blur(5px);
 }
 
 .linksContainer {
@@ -64,6 +64,15 @@ tbody tr:hover {
   height: 30px;
   width: 30px;
   margin-right: 10px;
+}
+
+#year-col {
+  color: var(--light-purple);
+  font-weight: 600;
+}
+
+#project-col {
+  font-weight: 600;
 }
 
 @media screen and (max-width: 900px) {

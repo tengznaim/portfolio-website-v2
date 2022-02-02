@@ -59,8 +59,10 @@ export default function Archive() {
           <tbody>
             {nodes.map(node => (
               <tr key={node.id}>
-                <td className={styles.mobileHide}>{node.frontmatter.year}</td>
-                <td>{node.frontmatter.title}</td>
+                <td className={styles.mobileHide} id={styles.yearCol}>
+                  {node.frontmatter.year}
+                </td>
+                <td id={styles.projectCol}>{node.frontmatter.title}</td>
                 <td className={styles.mobileHide}>
                   {node.frontmatter.developedAt}
                 </td>
