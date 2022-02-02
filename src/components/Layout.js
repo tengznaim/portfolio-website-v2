@@ -3,12 +3,12 @@ import "../styles/global.css"
 import Socials from "./Socials"
 import Navbar from "./Navbar"
 import Footer from "./Footer"
-import SEO from "./SEO"
+import Meta from "./SEO"
 
 export default function Layout({ children }) {
   return (
     <>
-      <SEO />
+      <Meta />
       <main className="main-container">
         <Navbar></Navbar>
         <Socials></Socials>
