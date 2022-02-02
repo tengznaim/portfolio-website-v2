@@ -6,19 +6,19 @@
   align-items: center;
   justify-content: space-between;
   z-index: 1;
+  padding: 100px 0px;
+  /* For development to see page boundaries, remove later */
+  /* border: 1px solid white; */
 }
 
-.leftText {
-  width: 45%;
-}
-
+.leftText,
 .rightText {
   width: 45%;
 }
 
 .header {
   font-size: 4.5rem;
-  color: white;
+  color: var(--white);
   font-family: "Karla";
   font-weight: 600;
 }
@@ -42,7 +42,7 @@
 
 .aboutParagraph {
   font-size: 1.25rem;
-  color: var(--white);
+  color: var(--purplish-white);
   font-family: "Karla";
   font-weight: 400;
 }
@@ -55,6 +55,53 @@
   cursor: pointer;
   font-family: "Karla";
   font-weight: 600;
-  margin: 32px 0;
+  margin-top: 20px;
   padding: 16px 24px;
+}
+
+@media screen and (max-width: 1200px) {
+  .heroContainer {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .rightText,
+  .leftText {
+    height: 45%;
+    width: 80%;
+    text-align: center;
+  }
+
+  .divider {
+    width: 80%;
+    height: 5px;
+    margin: 20px;
+  }
+
+  .header {
+    font-size: 3.5rem;
+  }
+
+  .subheader {
+    font-size: 2rem;
+  }
+
+  .aboutParagraph {
+    font-size: 1rem;
+  }
+
+  #archiveButton {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    font-size: 2rem;
+  }
+
+  .subheader {
+    font-size: 1.25rem;
+  }
 }
