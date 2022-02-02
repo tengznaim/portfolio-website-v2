@@ -8,7 +8,7 @@
   padding: 100px 0px;
   z-index: 1;
   /* For development to see page boundaries, remove later */
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 .header {
@@ -22,7 +22,7 @@
   margin: 20px 0px;
   width: 60%;
   font-size: 1rem;
-  color: white;
+  color: var(--purplish-white);
   font-family: "Karla";
   font-weight: 400;
   text-align: center;
@@ -78,6 +78,7 @@
 
 #project-description {
   font-size: 1rem;
+  color: var(--purplish-white);
 }
 
 @media screen and (max-width: 768px) {

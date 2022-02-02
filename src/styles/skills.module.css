@@ -8,7 +8,7 @@
   padding: 100px 0px;
   z-index: 1;
   /* For development to see page boundaries, remove later */
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 /* Table */
@@ -35,6 +35,10 @@
 .data-col {
   padding: 20px;
   border: 2px solid var(--yellow);
+}
+
+.data-col {
+  color: var(--purplish-white);
 }
 
 @media screen and (max-width: 768px) {

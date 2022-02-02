@@ -8,7 +8,7 @@
   padding: 100px 0px;
   z-index: 1;
   /* For development to see page boundaries, remove later */
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 .header {
@@ -66,7 +66,7 @@
 .info-paragraph,
 .task-list {
   font-size: 1rem;
-  color: var(--white);
+  color: var(--purplish-white);
   font-family: "Karla";
   font-weight: 400;
   margin: 20px 0px;
