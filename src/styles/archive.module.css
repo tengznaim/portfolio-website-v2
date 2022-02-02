@@ -45,6 +45,10 @@ td {
   padding: 10px;
 }
 
+tbody tr:hover {
+  background: #9daaf220;
+}
+
 .category-col,
 .data-col {
   padding: 20px;
@@ -60,4 +64,10 @@ td {
   height: 30px;
   width: 30px;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .mobileHide {
+    display: none;
+  }
 }

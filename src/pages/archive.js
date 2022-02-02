@@ -39,47 +39,59 @@ export default function Archive() {
           environments or my own personal projects.
         </p>
         <table className={styles.archiveTable}>
-          <tr>
-            <th className={styles.tableHeader}>Year</th>
-            <th className={styles.tableHeader}>Project</th>
-            <th className={styles.tableHeader}>Developed At</th>
-            <th className={styles.tableHeader}>Description</th>
-            <th className={styles.tableHeader}>Tech Stack</th>
-            <th className={styles.tableHeader}>Links</th>
-          </tr>
-          {nodes.map(node => (
-            <tr key={node.id}>
-              <td>{node.frontmatter.year}</td>
-              <td>{node.frontmatter.title}</td>
-              <td>{node.frontmatter.developedAt}</td>
-              <td>{node.frontmatter.description}</td>
-              <td>{node.frontmatter.techStack}</td>
-              <td>
-                <div className={styles.linksContainer}>
-                  {node.frontmatter.githubRepo && (
-                    <a
-                      href={node.frontmatter.githubRepo}
-                      target="_blank"
-                      rel="noreferrer noopener"
-                    >
-                      <GitHubIcon className={styles.linkIcons}></GitHubIcon>
-                    </a>
-                  )}
-                  {node.frontmatter.deployedLink && (
-                    <a
-                      href={node.frontmatter.githubRepo}
-                      target="_blank"
-                      rel="noreferrer noopener"
-                    >
-                      <FiExternalLink
-                        className={styles.linkIcons}
-                      ></FiExternalLink>
-                    </a>
-                  )}
-                </div>
-              </td>
+          <thead>
+            <tr>
+              <th className={styles.tableHeader}>Year</th>
+              <th className={styles.tableHeader}>Project</th>
+              <th className={`${styles.tableHeader} ${styles.mobileHide}`}>
+                Developed At
+              </th>
+              <th className={styles.tableHeader}>Description</th>
+              <th className={`${styles.tableHeader} ${styles.mobileHide}`}>
+                Tech Stack
+              </th>
+              <th className={styles.tableHeader}>Links</th>
             </tr>
-          ))}
+          </thead>
+          <tbody>
+            {nodes.map(node => (
+              <tr key={node.id}>
+                <td>{node.frontmatter.year}</td>
+                <td>{node.frontmatter.title}</td>
+                <td className={styles.mobileHide}>
+                  {node.frontmatter.developedAt}
+                </td>
+                <td>{node.frontmatter.description}</td>
+                <td className={styles.mobileHide}>
+                  {node.frontmatter.techStack}
+                </td>
+                <td>
+                  <div className={styles.linksContainer}>
+                    {node.frontmatter.githubRepo && (
+                      <a
+                        href={node.frontmatter.githubRepo}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <GitHubIcon className={styles.linkIcons}></GitHubIcon>
+                      </a>
+                    )}
+                    {node.frontmatter.deployedLink && (
+                      <a
+                        href={node.frontmatter.githubRepo}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <FiExternalLink
+                          className={styles.linkIcons}
+                        ></FiExternalLink>
+                      </a>
+                    )}
+                  </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
         </table>
       </div>
     </Layout>
