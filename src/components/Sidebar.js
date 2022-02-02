@@ -37,16 +37,32 @@ export default function Sidebar() {
         }
       >
         <div className={styles.linksContainer}>
-          <Link to="/#experience" className={styles.navLinks}>
+          <Link
+            to="/#experience"
+            className={styles.navLinks}
+            onClick={toggleFunction}
+          >
             Experience
           </Link>
-          <Link to="/#experience" className={styles.navLinks}>
+          <Link
+            to="/#projects"
+            className={styles.navLinks}
+            onClick={toggleFunction}
+          >
             Projects
           </Link>
-          <Link to="/#experience" className={styles.navLinks}>
+          <Link
+            to="/#skills"
+            className={styles.navLinks}
+            onClick={toggleFunction}
+          >
             Skills
           </Link>
-          <Link to="/#experience" className={styles.navLinks}>
+          <Link
+            to="/#contact"
+            className={styles.navLinks}
+            onClick={toggleFunction}
+          >
             Contact
           </Link>
           <a
