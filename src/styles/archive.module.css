@@ -41,8 +41,8 @@
   white-space: nowrap;
 }
 
-th,
-td {
+.table-header,
+.table-data {
   padding: 10px;
 }
 
@@ -50,16 +50,16 @@ td {
   color: var(--purplish-white);
 }
 
-tbody tr:nth-child(2n) {
+.table-body tr:nth-child(2n) {
   background: #9daaf220;
   backdrop-filter: blur(5px);
 }
 
-.linksContainer {
+.links-container {
   display: flex;
 }
 
-.linkIcons {
+.link-icons {
   color: var(--light-purple);
   height: 30px;
   width: 30px;

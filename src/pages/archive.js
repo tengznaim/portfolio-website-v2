@@ -56,21 +56,28 @@ export default function Archive() {
               <th className={styles.tableHeader}>Links</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className={styles.tableBody}>
             {nodes.map(node => (
               <tr key={node.id}>
-                <td className={styles.mobileHide} id={styles.yearCol}>
+                <td
+                  className={`${styles.tableData} ${styles.mobileHide}`}
+                  id={styles.yearCol}
+                >
                   {node.frontmatter.year}
                 </td>
-                <td id={styles.projectCol}>{node.frontmatter.title}</td>
-                <td className={styles.mobileHide}>
+                <td className={styles.tableData} id={styles.projectCol}>
+                  {node.frontmatter.title}
+                </td>
+                <td className={`${styles.tableData} ${styles.mobileHide}`}>
                   {node.frontmatter.developedAt}
                 </td>
-                <td>{node.frontmatter.description}</td>
-                <td className={styles.mobileHide}>
+                <td className={styles.tableData}>
+                  {node.frontmatter.description}
+                </td>
+                <td className={`${styles.tableData} ${styles.mobileHide}`}>
                   {node.frontmatter.techStack}
                 </td>
-                <td>
+                <td className={styles.tableData}>
                   <div className={styles.linksContainer}>
                     {node.frontmatter.githubRepo && (
                       <a
