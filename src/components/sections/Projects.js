@@ -32,8 +32,10 @@ export default function Projects() {
 
   return (
     <section className={styles.projectsContainer} id="projects">
-      <h1 className={styles.header}>Projects</h1>
-      <p className={styles.description}>
+      <h1 className={styles.header} data-aos="fade" data-aos-delay="500">
+        Projects
+      </h1>
+      <p className={styles.description} data-aos="fade" data-aos-delay="1000">
         I've worked on a variety of projects, primarily in the fields of machine
         learning, computer vision and web application development. To see more
         of my work, especially those in professional environments, feel free to
@@ -53,8 +55,13 @@ export default function Projects() {
         .
       </p>
       <div className={styles.projectsGrid}>
-        {nodes.map(node => (
-          <div className={styles.projectItem} key={node.id}>
+        {nodes.map((node, index) => (
+          <div
+            className={styles.projectItem}
+            key={node.id}
+            data-aos="fade-up"
+            data-aos-delay={1500 + index * 500}
+          >
             <div className={styles.projectLinkContainer}>
               {node.frontmatter.githubRepo && (
                 <a

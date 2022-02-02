@@ -26,7 +26,12 @@ export default function Experience() {
   const [activeExperience, setActiveExperience] = useState(0)
 
   return (
-    <section className={styles.experienceContainer} id="experience">
+    <section
+      className={styles.experienceContainer}
+      id="experience"
+      data-aos="fade"
+      data-aos-delay="500"
+    >
       <h1 className={styles.header}>Experience</h1>
       <div className={styles.content}>
         <div className={styles.selectorList}>

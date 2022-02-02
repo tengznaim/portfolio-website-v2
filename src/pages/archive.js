@@ -34,14 +34,20 @@ export default function Archive() {
     <Layout>
       <Helmet title="Archive" />
       <div className={styles.archiveContainer}>
-        <h1 className={styles.header}>Project Archive</h1>
-        <p className={styles.description}>
+        <h1 className={styles.header} data-aos="fade-down">
+          Hall of Projects
+        </h1>
+        <p
+          className={styles.description}
+          data-aos="fade-down"
+          data-aos-delay="500"
+        >
           Here's an archive of the things I've worked on, either in professional
           environments or my own personal projects.
         </p>
         <table className={styles.archiveTable}>
           <thead>
-            <tr>
+            <tr data-aos="fade-down" data-aos-delay="1000">
               <th className={`${styles.tableHeader} ${styles.mobileHide}`}>
                 Year
               </th>
@@ -58,7 +64,7 @@ export default function Archive() {
           </thead>
           <tbody className={styles.tableBody}>
             {nodes.map(node => (
-              <tr key={node.id}>
+              <tr key={node.id} data-aos="fade-down" data-aos-delay="1500">
                 <td
                   className={`${styles.tableData} ${styles.mobileHide}`}
                   id={styles.yearCol}
