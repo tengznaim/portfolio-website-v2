@@ -42,7 +42,9 @@ export default function Archive() {
         <table className={styles.archiveTable}>
           <thead>
             <tr>
-              <th className={styles.tableHeader}>Year</th>
+              <th className={`${styles.tableHeader} ${styles.mobileHide}`}>
+                Year
+              </th>
               <th className={styles.tableHeader}>Project</th>
               <th className={`${styles.tableHeader} ${styles.mobileHide}`}>
                 Developed At
@@ -57,7 +59,7 @@ export default function Archive() {
           <tbody>
             {nodes.map(node => (
               <tr key={node.id}>
-                <td>{node.frontmatter.year}</td>
+                <td className={styles.mobileHide}>{node.frontmatter.year}</td>
                 <td>{node.frontmatter.title}</td>
                 <td className={styles.mobileHide}>
                   {node.frontmatter.developedAt}
