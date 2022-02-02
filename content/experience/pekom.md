@@ -6,7 +6,7 @@ description: Persatuan Komputer Universiti Malaya (PEKOM UM) or Computer Society
 experienceID: 2
 ---
 
-- Led a team of 2 in handling multimedia, publicity and technical tasks during events.
+- Led a team of 2 in handling the society's multimedia, publicity and technical needs.
 - Curated posters for society activities and festive events.
 - Moderated postings that were in collaboration with the society.
 - Communicated with collaborators and fellow students through social media channels.
