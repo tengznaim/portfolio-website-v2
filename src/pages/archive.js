@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import { Helmet } from "react-helmet"
 import Layout from "../components/Layout"
 import * as styles from "../styles/archive.module.css"
 import GitHubIcon from "../assets/github.svg"
@@ -28,10 +29,10 @@ export default function Archive() {
     }
   `)
   const nodes = data.allMarkdownRemark.nodes
-  console.log(nodes)
 
   return (
     <Layout>
+      <Helmet title="Archive" />
       <div className={styles.archiveContainer}>
         <h1 className={styles.header}>Project Archive</h1>
         <p className={styles.description}>

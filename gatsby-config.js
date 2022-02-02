@@ -8,7 +8,8 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: `Tengku Naim`,
-    // siteUrl: `https://www.gatsbyjs.com`, Update Later
+    titleTemplate: `%s | Tengku Naim`,
+    url: `https://www.tengkunaim.web.app`,
     description: `Tengku Naim is a computer science undergraduate who loves using data and computers to solve human problems.`,
   },
   plugins: [
@@ -28,5 +29,6 @@ module.exports = {
       },
     },
     "gatsby-transformer-remark",
+    "gatsby-plugin-react-helmet",
   ],
 }
