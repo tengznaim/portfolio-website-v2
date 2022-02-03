@@ -1,0 +1,31 @@
+name: Build site and deploy to Firebase Hosting
+
+on: workflow_dispatch
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+
+      - name: Install Project Dependencies
+        run: npm ci
+
+      - name: Install Gatsby CLI
+        run: npm install -g gatsby-cli
+
+      - name: Build Production Site
+        run: gatsby build
+
+      - name: Verify Build
+        run: ls -la public
+
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_PORTFOLIO_WEBSITE_73171 }}"
+          projectId: portfolio-website-73171
