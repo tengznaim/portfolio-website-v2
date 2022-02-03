@@ -15,17 +15,24 @@ export default function Meta({ title, description, image }) {
           titleTemplate
           defaultDescription: description
           siteUrl: url
+          defaultImage: image
         }
       }
     }
   `)
 
-  const { defaultTitle, titleTemplate, defaultDescription, siteUrl } =
-    site.siteMetadata
+  const {
+    defaultTitle,
+    titleTemplate,
+    defaultDescription,
+    siteUrl,
+    defaultImage,
+  } = site.siteMetadata
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
+    image: `${siteUrl}${image || defaultImage}`,
     url: `${siteUrl}${pathname}`,
   }
 
@@ -40,6 +47,7 @@ export default function Meta({ title, description, image }) {
       <meta property="og:url" content={seo.url} />
       <meta property="og:title" content={seo.title} />
       <meta property="og:description" content={seo.description} />
+      <meta property="og:image" content={seo.image} />
     </Helmet>
   )
 }
