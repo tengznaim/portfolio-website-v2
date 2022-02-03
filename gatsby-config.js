@@ -9,8 +9,9 @@ module.exports = {
   siteMetadata: {
     title: `Tengku Naim`,
     titleTemplate: `%s | Tengku Naim`,
+    description: `Tengku Naim is a computer science undergraduate who loves using data and computers to solve problems.`,
     url: `https://www.tengkunaim.web.app`,
-    description: `Tengku Naim is a computer science undergraduate who loves using data and computers to solve human problems.`,
+    image: "/og.png",
   },
   plugins: [
     {
