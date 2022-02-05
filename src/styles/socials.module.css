@@ -1,4 +1,4 @@
-.socialContainer {
+.social-container {
   position: fixed;
   height: 150px;
   left: 50px;
@@ -9,13 +9,13 @@
   justify-content: space-between;
 }
 
-.socialIcons {
+.social-icons {
   height: 30px;
   width: 30px;
 }
 
 @media screen and (max-width: 768px) {
-  .socialContainer {
+  .social-container {
     display: none;
   }
 }

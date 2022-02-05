@@ -1,4 +1,4 @@
-.projectsContainer {
+.projects-container {
   width: 90%;
   min-height: 100vh;
   display: flex;
@@ -94,7 +94,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .projectsContainer {
+  .projects-container {
     width: 100%;
   }
 

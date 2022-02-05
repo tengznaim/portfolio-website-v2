@@ -1,4 +1,4 @@
-.sidebarWrapper {
+.sidebar-wrapper {
   display: none;
 }
 
@@ -15,7 +15,7 @@
   z-index: 3;
 }
 
-.linksContainer {
+.links-container {
   height: 50%;
   display: flex;
   flex-direction: column;
@@ -23,19 +23,19 @@
   justify-content: space-between;
 }
 
-.navLinks {
-  color: white;
+.nav-links {
+  color: var(--white);
   font-family: "Karla";
   font-size: 1.25rem;
   font-weight: 600;
   text-decoration: none;
 }
 
-.navLinks:hover {
+.nav-links:hover {
   color: var(--light-purple);
 }
 
-.mobileToggleButton {
+.mobile-toggle-button {
   position: relative;
   font-size: 40px;
   cursor: pointer;
@@ -48,14 +48,14 @@
   display: none;
 }
 
-#resumeButton {
+#resume-button {
   padding: 10px 20px;
   background-color: var(--yellow);
   color: var(--secondary-blue);
 }
 
 @media screen and (max-width: 768px) {
-  .sidebarWrapper {
+  .sidebar-wrapper {
     display: block;
   }
 }

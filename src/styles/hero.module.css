@@ -1,4 +1,4 @@
-.heroContainer {
+.hero-container {
   width: 90%;
   min-height: 100vh;
   display: flex;
@@ -11,8 +11,8 @@
   /* border: 1px solid white; */
 }
 
-.leftText,
-.rightText {
+.left-text,
+.right-text {
   width: 45%;
 }
 
@@ -40,14 +40,14 @@
   background-color: var(--yellow);
 }
 
-.aboutParagraph {
+.about-paragraph {
   font-size: 1.25rem;
   color: var(--purplish-white);
   font-family: "Karla";
   font-weight: 400;
 }
 
-#archiveButton {
+#archive-button {
   font-size: 1.25rem;
   background-color: var(--yellow);
   color: var(--primary-blue);
@@ -60,14 +60,14 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .heroContainer {
+  .hero-container {
     width: 100%;
     flex-direction: column;
     justify-content: center;
   }
 
-  .rightText,
-  .leftText {
+  .right-text,
+  .left-text {
     height: 45%;
     width: 80%;
     text-align: center;
@@ -87,11 +87,11 @@
     font-size: 2rem;
   }
 
-  .aboutParagraph {
+  .about-paragraph {
     font-size: 1rem;
   }
 
-  #archiveButton {
+  #archive-button {
     font-size: 1rem;
   }
 }
