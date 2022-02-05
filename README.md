@@ -34,3 +34,4 @@ This takes inspiration from one of my favourite portfolio websites by [Brittany 
 3. [GitHub actions for deploying to Firebase](https://github.com/marketplace/actions/deploy-to-firebase-hosting)
 4. [Deploying a Gatsby application to Firebase](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/deploying-to-firebase/)
 5. [Guide on GitHub actions for Gatsby Build + Firebase Deploy](https://www.andrewvillazon.com/automatically-deploying-with-github-actions/)
+6. [Fixing SSL issues with Firebase .web.app URLs](https://stackoverflow.com/questions/63508679/how-do-i-resolve-err-cert-common-name-invalid-page-after-visiting-my-firebase)

@@ -6,11 +6,12 @@
 
 module.exports = {
   /* Your site config here */
+  // Note that the lack of a www in the url below is deliberate due to SSL cert issues when hosting with Firebase.
   siteMetadata: {
     title: `Tengku Naim`,
     titleTemplate: `%s | Tengku Naim`,
-    description: `Tengku Naim is a computer science undergraduate who loves using data and computers to solve problems.`,
-    url: `https://www.tengkunaim.web.app`,
+    description: `Third year computer science undergraduate who loves using data and computers to solve problems.`,
+    url: `https://tengkunaim.web.app`,
     image: "/og.png",
   },
   plugins: [
