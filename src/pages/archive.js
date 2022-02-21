@@ -96,7 +96,7 @@ export default function Archive() {
                     )}
                     {node.frontmatter.deployedLink && (
                       <a
-                        href={node.frontmatter.githubRepo}
+                        href={node.frontmatter.deployedLink}
                         target="_blank"
                         rel="noreferrer noopener"
                       >

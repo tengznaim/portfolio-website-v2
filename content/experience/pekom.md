@@ -1,7 +1,7 @@
 ---
 company: PEKOM
 title: Multimedia and Publicity EXCO Lead
-duration: February 2021 - Present
+duration: February 2021 - February 2022
 description: Persatuan Komputer Universiti Malaya (PEKOM UM) or Computer Society University of Malaya is the Faculty of Computer Science and Information Technology's student society. They primarily organise academic, computing and IT-related programs for UM students.
 experienceID: 2
 ---
