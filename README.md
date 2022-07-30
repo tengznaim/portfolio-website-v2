@@ -27,6 +27,19 @@ This takes inspiration from one of my favourite portfolio websites by [Brittany 
 | Purplish White | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
 | White          | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) `#FFFFFF` |
 
+### Running the Site Locally
+
+For personal reference and/or for whoever who would like to run this site locally, use the following commands.
+
+1. Assuming the repository is initially cloned, navigate into the project directory and install the dependencies:
+   ```
+   npm install
+   ```
+2. Run the development server:
+   ```
+   gatsby develop
+   ```
+
 ### References
 
 1. [How to use useRef and the difference with useState](https://www.youtube.com/watch?v=t2ypzz6gJm0)

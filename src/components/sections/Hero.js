@@ -35,14 +35,19 @@ export default function Hero() {
           data-aos="fade-left"
           data-aos-delay="1500"
         >
-          I'm a third year{" "}
+          I'm a final year{" "}
           <span className={styles.highlighted}>Computer Science</span>{" "}
           undergraduate majoring in{" "}
           <span className={styles.highlighted}>Artificial Intelligence</span> at{" "}
           <span className={styles.highlighted}>University of Malaya</span>. I
           love building AI-based solutions (hopefully those that don't take over
-          the world) and venturing into the vast world of technology. Currently,
-          I'm focusing on completing my final two semesters at university.
+          the world) and venturing into the vast world of technology.
+          Professionally, my areas of interest include{" "}
+          <span className={styles.highlighted}>Computer Vision</span>,{" "}
+          <span className={styles.highlighted}>Data Science</span> and{" "}
+          <span className={styles.highlighted}>
+            Machine Learning Operations (MLOps)
+          </span>
         </p>
       </div>
     </section>

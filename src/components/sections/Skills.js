@@ -22,8 +22,8 @@ export default function Skills() {
           <tr data-aos="fade-right" data-aos-delay="1500">
             <td className={styles.categoryCol}>AI/ML/DS</td>
             <td className={styles.dataCol}>
-              TensorFlow, PyTorch, scikit-learn, Pandas, Numpy, Matplotlib,
-              OpenCV
+              TensorFlow, PyTorch, scikit-learn, PyCaret, tsfresh, Pandas,
+              Numpy, Matplotlib, OpenCV
             </td>
           </tr>
           <tr data-aos="fade-right" data-aos-delay="2000">
