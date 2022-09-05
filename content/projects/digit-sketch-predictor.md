@@ -7,5 +7,5 @@ githubRepo: https://github.com/tengznaim/digit-sketch-predictor
 deployedLink: https://digit-sketch-predictor.herokuapp.com/
 techStack: PyTorch • OpenCV • Streamlit • Docker • Heroku
 feature: true
-featureID: 2
+featureID: 5
 ---

@@ -5,5 +5,6 @@ year: 2022
 developedAt: University (Group Project)
 techStack: Tensorflow • scikit-learn • Pandas • Flask • Streamlit
 githubRepo: https://github.com/nepulepu/Inspector_Gloom
-feature: false
+feature: true
+featureID: 2
 ---

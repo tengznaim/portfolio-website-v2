@@ -35,7 +35,8 @@ export default function Skills() {
           <tr data-aos="fade-right" data-aos-delay="2500">
             <td className={styles.categoryCol}>Cloud and Ops</td>
             <td className={styles.dataCol}>
-              Google Cloud Platform, Airflow, Terraform, Docker, Selenium, Git
+              Google Cloud Platform, Firebase, Airflow, Terraform, Docker,
+              Selenium, Git
             </td>
           </tr>
         </tbody>

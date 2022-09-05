@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import * as styles from "../../styles/projects.module.css"
 import GitHubIcon from "../../assets/github.svg"
@@ -8,18 +8,18 @@ export default function Projects() {
   const data = useStaticQuery(graphql`
     query projectQuery {
       allMarkdownRemark(
-        filter: {
-          frontmatter: { feature: { eq: true } }
-          fileAbsolutePath: { regex: "/projects/" }
-        }
         sort: { order: ASC, fields: frontmatter___featureID }
+        filter: {
+          fileAbsolutePath: { regex: "/projects/" }
+          frontmatter: { feature: { eq: true } }
+        }
       ) {
         nodes {
           id
           frontmatter {
             title
-            title
             description
+            featureDesc
             githubRepo
             techStack
             deployedLink
@@ -29,6 +29,16 @@ export default function Projects() {
     }
   `)
   const nodes = data.allMarkdownRemark.nodes
+
+  const [visibleCount, setVisibleCount] = useState(3)
+  const handleExpand = event => {
+    // If the see more button is click, display the rest of the projects. Else, reset to the default count.
+    if (visibleCount === 3) {
+      setVisibleCount(nodes.length)
+    } else {
+      setVisibleCount(3)
+    }
+  }
 
   return (
     <section className={styles.projectsContainer} id="projects">
@@ -55,12 +65,13 @@ export default function Projects() {
         .
       </p>
       <div className={styles.projectsGrid}>
-        {nodes.map((node, index) => (
+        {/* By default, show the first 3 projects and upon clicking see more, expand to the show the rest of the projects. */}
+        {nodes.slice(0, visibleCount).map((node, index) => (
           <div
             className={styles.projectItem}
             key={node.id}
             data-aos="fade-up"
-            data-aos-delay={1500 + index * 500}
+            data-aos-delay={index < 3 ? 1500 + index * 500 : 0}
           >
             <div className={styles.projectLinkContainer}>
               {node.frontmatter.githubRepo && (
@@ -85,7 +96,9 @@ export default function Projects() {
                 {node.frontmatter.title}
               </h2>
               <p className={styles.itemText} id={styles.projectDescription}>
-                {node.frontmatter.description}
+                {node.frontmatter.featureDesc
+                  ? node.frontmatter.featureDesc
+                  : node.frontmatter.description}
               </p>
               <p className={styles.itemText} id={styles.projectDescription}>
                 {node.frontmatter.techStack}
@@ -94,6 +107,14 @@ export default function Projects() {
           </div>
         ))}
       </div>
+      <button
+        id={styles.seeMoreButton}
+        data-aos="fade-up"
+        data-aos-delay="3000"
+        onClick={handleExpand}
+      >
+        See {visibleCount === 3 ? "More" : "Less"}
+      </button>
     </section>
   )
 }

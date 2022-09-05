@@ -5,5 +5,6 @@ year: 2022
 developedAt: University (Group Project)
 techStack: PyTorch • OpenCV • ROS • rospy • Ubuntu • SpeechRecognition
 githubRepo: https://github.com/tengznaim/anney-robot
-feature: false
+feature: true
+featureID: 3
 ---
