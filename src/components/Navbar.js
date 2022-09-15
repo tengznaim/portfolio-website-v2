@@ -59,7 +59,7 @@ export default function Navbar() {
             Contact
           </Link>
           <a
-            href="/resume.pdf"
+            href="/tengku_naim_resume.pdf"
             target="_blank"
             rel="noreferrer noopener"
             className={styles.navLinks}
