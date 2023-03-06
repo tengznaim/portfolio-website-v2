@@ -8,9 +8,10 @@ export default function Contact() {
         Contact
       </h1>
       <p className={styles.paragraph} data-aos="fade" data-aos-delay="1000">
-        As I'm still a student until early 2023, I'm not actively looking for
-        positions. However, if you'd like to know more about me, interested to
-        work with me or just want to say hi, feel free to contact me!
+        I'm currently looking for positions, primarily in Data Science, Computer
+        Vision or Machine Learning Engineering. If you'd like to know more about
+        me, interested to work with me or just want to say hi, feel free to
+        contact me!
       </p>
       <a href="mailto:naimtmas@gmail.com">
         <button

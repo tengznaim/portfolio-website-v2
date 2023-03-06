@@ -14,9 +14,9 @@ export default function Hero() {
           data-aos="fade-right"
           data-aos-delay="500"
         >
-          I love <span className={styles.highlighted}>solving problems</span>{" "}
-          with <span className={styles.highlighted}>data</span> and{" "}
-          <span className={styles.highlighted}>computers</span>
+          I love <span className={styles.highlighted}>teaching machines</span>{" "}
+          to <span className={styles.highlighted}>solve problems</span> with{" "}
+          <span className={styles.highlighted}>data</span>
         </h1>
         <Link to="/archive">
           <button
@@ -35,11 +35,11 @@ export default function Hero() {
           data-aos="fade-left"
           data-aos-delay="1500"
         >
-          I'm a final year{" "}
-          <span className={styles.highlighted}>Computer Science</span>{" "}
-          undergraduate majoring in{" "}
-          <span className={styles.highlighted}>Artificial Intelligence</span> at{" "}
-          <span className={styles.highlighted}>University of Malaya</span>. I
+          I'm a <span className={styles.highlighted}>first class graduate</span>{" "}
+          in <span className={styles.highlighted}>Computer Science</span> from{" "}
+          <span className={styles.highlighted}>University of Malaya</span>,
+          specialising in{" "}
+          <span className={styles.highlighted}>Artificial Intelligence</span>. I
           love building AI-based solutions (hopefully those that don't take over
           the world) and venturing into the vast world of technology.
           Professionally, my areas of interest include{" "}
